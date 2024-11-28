@@ -51,6 +51,6 @@ func main() {
 		w.Write([]byte(did))
 	}))
 	hp := net.JoinHostPort("", strconv.Itoa(*port))
-	log.Printf("listening on &q", hp)
+	log.Printf("listening on %q", hp)
 	http.ListenAndServe(hp, nil)
 }
